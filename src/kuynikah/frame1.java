@@ -74,7 +74,7 @@ public class frame1 extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, Short.MAX_VALUE)
+            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,19 +85,19 @@ public class frame1 extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(225, 222, 222));
 
-        jLabel8.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(101, 176, 242));
         jLabel8.setText("Rayakan cinta Anda dengan upacara menakjubkan");
 
-        jLabel9.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(101, 176, 242));
         jLabel9.setText("kami menawarkan suasana romantis untuk ");
 
-        jLabel10.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(101, 176, 242));
         jLabel10.setText("janji suci dalam suasana yang penuh romansa");
 
-        jLabel11.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(101, 176, 242));
         jLabel11.setText("dan ketenangan.");
 
@@ -117,7 +117,7 @@ public class frame1 extends javax.swing.JFrame {
                         .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel11))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
@@ -137,19 +137,19 @@ public class frame1 extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(225, 222, 222));
 
-        jLabel12.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(101, 176, 242));
         jLabel12.setText("Nikmati resepsi  yang elegan di mana ");
 
-        jLabel13.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(101, 176, 242));
         jLabel13.setText("setiap detail dikurasi dengan cermat. ");
 
-        jLabel14.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(101, 176, 242));
         jLabel14.setText("nikmati pertemuan intim atau perayaan megah ");
 
-        jLabel15.setFont(new java.awt.Font("Lucida Bright", 0, 10)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Lucida Bright", 0, 8)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(101, 176, 242));
         jLabel15.setText("bersama keluarga dan teman terdekat Anda .");
 
@@ -190,10 +190,10 @@ public class frame1 extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(101, 176, 242));
         jLabel3.setText("Our Wedding Services");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hype AMD\\Downloads\\akad2.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/akad2.jpg"))); // NOI18N
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(151, 87, 23)));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hype AMD\\Downloads\\akad.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/akad.jpg"))); // NOI18N
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(151, 87, 23)));
 
         jLabel6.setFont(new java.awt.Font("Lucida Bright", 1, 18)); // NOI18N
@@ -209,28 +209,25 @@ public class frame1 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(85, 85, 85)
+                .addGap(49, 49, 49)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
-                .addGap(102, 102, 102))
+                .addGap(74, 74, 74))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(20, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(42, 42, 42))))
+                    .addComponent(jLabel4)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(194, 194, 194))
+                .addGap(155, 155, 155))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -270,13 +267,13 @@ public class frame1 extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(154, 154, 154))))
+                        .addGap(117, 117, 117))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
