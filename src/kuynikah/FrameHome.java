@@ -29,10 +29,10 @@ public class FrameHome extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        lbl1 = new javax.swing.JLabel();
+        lbl2 = new javax.swing.JLabel();
+        lbl3 = new javax.swing.JLabel();
+        btn1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -41,24 +41,26 @@ public class FrameHome extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 10)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("WEDDING ORGANIZER & CATERING");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, -1, 20));
+        lbl1.setFont(new java.awt.Font("Times New Roman", 0, 10)); // NOI18N
+        lbl1.setForeground(new java.awt.Color(255, 255, 255));
+        lbl1.setText("WEDDING ORGANIZER & CATERING");
+        jPanel1.add(lbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, -1, 20));
 
-        jLabel2.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("WUJUDKAN MOMENT KEBAHAGIAN PERNIKAHAN ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 20));
+        lbl2.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
+        lbl2.setForeground(new java.awt.Color(255, 255, 255));
+        lbl2.setText("WUJUDKAN MOMENT KEBAHAGIAN PERNIKAHAN ");
+        jPanel1.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 20));
 
-        jLabel3.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ANDA BERSAMA KAMI ARCANNA GROUP");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
+        lbl3.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
+        lbl3.setForeground(new java.awt.Color(255, 255, 255));
+        lbl3.setText("ANDA BERSAMA KAMI ARCANNA GROUP");
+        jPanel1.add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Castellar", 1, 12)); // NOI18N
-        jButton1.setText("MULAI");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 288, -1));
+        btn1.setBackground(new java.awt.Color(101, 176, 242));
+        btn1.setFont(new java.awt.Font("Castellar", 1, 12)); // NOI18N
+        btn1.setForeground(new java.awt.Color(255, 255, 255));
+        btn1.setText("MULAI");
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 288, -1));
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 320));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/home.png"))); // NOI18N
@@ -104,12 +106,12 @@ public class FrameHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton btn1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lbl1;
+    private javax.swing.JLabel lbl2;
+    private javax.swing.JLabel lbl3;
     // End of variables declaration//GEN-END:variables
 }
