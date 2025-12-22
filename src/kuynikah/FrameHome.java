@@ -60,6 +60,7 @@ public class FrameHome extends javax.swing.JFrame {
         btn1.setFont(new java.awt.Font("Castellar", 1, 12)); // NOI18N
         btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("MULAI");
+        btn1.addActionListener(this::btn1ActionPerformed);
         jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 288, -1));
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 320));
 
@@ -79,6 +80,15 @@ public class FrameHome extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+        // Membuat objek dari frame tujuan
+        FramePertanyaan pindah = new
+        FramePertanyaan();
+        pindah.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn1ActionPerformed
 
     /**
      * @param args the command line arguments
