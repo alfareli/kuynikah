@@ -47,7 +47,6 @@ public class FramePertanyaan extends javax.swing.JFrame {
         lbl10 = new javax.swing.JLabel();
         txt2 = new javax.swing.JTextField();
         lbl12 = new javax.swing.JLabel();
-        Calendar1 = new com.toedter.calendar.JCalendar();
         lbl11 = new javax.swing.JLabel();
         txt3 = new javax.swing.JTextField();
         lbl13 = new javax.swing.JLabel();
@@ -222,7 +221,6 @@ public class FramePertanyaan extends javax.swing.JFrame {
                     .addComponent(txt5)
                     .addComponent(txt1)
                     .addComponent(lbl9)
-                    .addComponent(Calendar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -257,9 +255,7 @@ public class FramePertanyaan extends javax.swing.JFrame {
                             .addComponent(txt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lbl12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Calendar1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(lbl13))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lbl1)
@@ -344,7 +340,6 @@ public class FramePertanyaan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JCalendar Calendar1;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
