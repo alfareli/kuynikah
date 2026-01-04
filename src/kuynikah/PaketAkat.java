@@ -71,40 +71,34 @@ public class PaketAkat extends javax.swing.JFrame {
         jLabel4.setBounds(514, 79, 36, 27);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Paket Dengan Harga");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(35, 254, 100, 15);
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("  Terjangkau/Murah");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(35, 275, 100, 15);
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Paket Dengan Harga");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(260, 254, 100, 15);
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("     Standar/Biasa");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(260, 275, 94, 15);
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Paket Dengan Harga");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(478, 254, 100, 15);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(242, 242, 242));
         jLabel10.setText("  Superior/Mahal");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(492, 275, 78, 15);
+        jLabel10.setBounds(480, 280, 90, 15);
 
         jButton1.setText("Pesan");
         getContentPane().add(jButton1);
