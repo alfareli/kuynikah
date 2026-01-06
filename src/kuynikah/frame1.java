@@ -92,6 +92,7 @@ public class frame1 extends javax.swing.JFrame {
         btn1.setBackground(new java.awt.Color(101, 176, 242));
         btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("PESAN SEKARANG");
+        btn1.addActionListener(this::btn1ActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -144,6 +145,7 @@ public class frame1 extends javax.swing.JFrame {
         btn2.setBackground(new java.awt.Color(101, 176, 242));
         btn2.setForeground(new java.awt.Color(255, 255, 255));
         btn2.setText("PESAN SEKARANG");
+        btn2.addActionListener(this::btn2ActionPerformed);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -280,6 +282,20 @@ public class frame1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+         tradisional tr = new tradisional();
+         tr.setVisible(true);         
+         this.dispose();             
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+        moderen mr = new moderen();
+        mr.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btn1ActionPerformed
 
     /**
      * @param args the command line arguments
