@@ -28,44 +28,41 @@ public class FrameHome extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        lbl1 = new javax.swing.JLabel();
         lbl2 = new javax.swing.JLabel();
         lbl3 = new javax.swing.JLabel();
+        lbl1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         btn1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+
+        lbl2.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
+        lbl2.setForeground(new java.awt.Color(255, 255, 255));
+        lbl2.setText("WUJUDKAN MOMENT KEBAHAGIAN PERNIKAHAN ");
+
+        lbl3.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
+        lbl3.setForeground(new java.awt.Color(255, 255, 255));
+        lbl3.setText("ANDA BERSAMA KAMI ARCANNA GROUP");
+
+        lbl1.setFont(new java.awt.Font("Times New Roman", 0, 10)); // NOI18N
+        lbl1.setForeground(new java.awt.Color(255, 255, 255));
+        lbl1.setText("WEDDING ORGANIZER & CATERING");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbl1.setFont(new java.awt.Font("Times New Roman", 0, 10)); // NOI18N
-        lbl1.setForeground(new java.awt.Color(255, 255, 255));
-        lbl1.setText("WEDDING ORGANIZER & CATERING");
-        jPanel1.add(lbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, -1, 20));
-
-        lbl2.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
-        lbl2.setForeground(new java.awt.Color(255, 255, 255));
-        lbl2.setText("WUJUDKAN MOMENT KEBAHAGIAN PERNIKAHAN ");
-        jPanel1.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, 20));
-
-        lbl3.setFont(new java.awt.Font("Castellar", 1, 14)); // NOI18N
-        lbl3.setForeground(new java.awt.Color(255, 255, 255));
-        lbl3.setText("ANDA BERSAMA KAMI ARCANNA GROUP");
-        jPanel1.add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
-
         btn1.setBackground(new java.awt.Color(101, 176, 242));
         btn1.setFont(new java.awt.Font("Castellar", 1, 12)); // NOI18N
         btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("MULAI");
         btn1.addActionListener(this::btn1ActionPerformed);
-        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 288, -1));
+        jPanel1.add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 288, -1));
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 320));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/home.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 320));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/nyehh.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, 0, 620, 330));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,17 +72,14 @@ public class FrameHome extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
-        // Membuat objek dari frame tujuan
-        FramePertanyaan pindah = new
-        FramePertanyaan();
+        FramePertanyaan pindah = new FramePertanyaan();
         pindah.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed

@@ -8,14 +8,14 @@ package kuynikah;
  *
  * @author HYPE AMD
  */
-public class PaketAkat extends javax.swing.JFrame {
+public class tradisional extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(PaketAkat.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(tradisional.class.getName());
 
     /**
      * Creates new form PaketAkat
      */
-    public PaketAkat() {
+    public tradisional() {
         initComponents();
     }
 
@@ -29,94 +29,64 @@ public class PaketAkat extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
-
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Paket Akat Nikah");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(233, 27, 152, 34);
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Paket 1");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(67, 79, 36, 27);
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Paket 2");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(293, 79, 36, 27);
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Paket 3");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(514, 79, 36, 27);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel5.setText("Paket Dengan Harga");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(35, 254, 100, 15);
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel6.setText("  Terjangkau/Murah");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(35, 275, 100, 15);
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel7.setText("Paket Dengan Harga");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(260, 254, 100, 15);
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel8.setText("     Standar/Biasa");
-        getContentPane().add(jLabel8);
-        jLabel8.setBounds(260, 275, 94, 15);
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
-        jLabel9.setText("Paket Dengan Harga");
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(478, 254, 100, 15);
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Paket murah");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jLabel10.setText("  Superior/Mahal");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(480, 280, 90, 15);
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel9.setText("Paket Dengan Harga");
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel7.setText("Paket Dengan Harga");
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel8.setText("     Standar/Biasa");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jButton1.setText("Pesan");
         getContentPane().add(jButton1);
-        jButton1.setBounds(272, 112, 72, 23);
+        jButton1.setBounds(350, 310, 72, 23);
 
         jButton2.setText("Pesan");
         jButton2.addActionListener(this::jButton2ActionPerformed);
         getContentPane().add(jButton2);
-        jButton2.setBounds(496, 112, 72, 23);
+        jButton2.setBounds(590, 310, 72, 23);
 
         jButton3.setText("Pesan");
         getContentPane().add(jButton3);
-        jButton3.setBounds(48, 112, 72, 23);
+        jButton3.setBounds(120, 310, 72, 23);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\HYPE AMD\\Downloads\\Foto Lorong Pernikahan warna biru - Pngtree_files\\pngtree-elegant-blue-wedding-aisle-with-lanterns-image_17085841.jpg")); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tradisinal final final.jpg"))); // NOI18N
         jLabel11.setText("jLabel11");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(0, 0, 620, 410);
+        jLabel11.setBounds(0, 0, 780, 410);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -147,7 +117,7 @@ public class PaketAkat extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new PaketAkat().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new tradisional().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -158,8 +128,6 @@ public class PaketAkat extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

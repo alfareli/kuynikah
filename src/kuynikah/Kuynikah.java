@@ -15,6 +15,8 @@ public class Kuynikah {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FrameHome tampilan = new FrameHome(); 
+        tampilan.setVisible(true);
     }
     
 }
