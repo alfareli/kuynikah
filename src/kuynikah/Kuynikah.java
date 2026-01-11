@@ -17,6 +17,8 @@ public class Kuynikah {
         // TODO code application logic here
         FrameHome tampilan = new FrameHome(); 
         tampilan.setVisible(true);
+        
+        
     }
     
 }

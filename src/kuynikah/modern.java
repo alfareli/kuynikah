@@ -9,6 +9,7 @@ package kuynikah;
  * @author LENOVO
  */
 public class modern extends javax.swing.JPanel {
+    int harga;
 
     /**
      * Creates new form 
@@ -48,18 +49,36 @@ public class modern extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton2.setText("jButton2");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, -1, -1));
 
         jButton3.setText("jButton3");
+        jButton3.addActionListener(this::jButton3ActionPerformed);
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, -1, -1));
 
         jButton4.setText("jButton4");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
         add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/modern final.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -10, 760, -1));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        harga = 13000000;
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        harga = 30000000;
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        harga = 60000000;
+    }//GEN-LAST:event_jButton4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -9,6 +9,9 @@ package kuynikah;
  * @author HYPE AMD
  */
 public class tradisional extends javax.swing.JFrame {
+    //deklarasi
+    
+    int harga;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(tradisional.class.getName());
 
@@ -17,6 +20,7 @@ public class tradisional extends javax.swing.JFrame {
      */
     public tradisional() {
         initComponents();
+    
     }
 
     /**
@@ -71,6 +75,7 @@ public class tradisional extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton1.setText("Pesan");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         getContentPane().add(jButton1);
         jButton1.setBounds(350, 310, 72, 23);
 
@@ -80,6 +85,7 @@ public class tradisional extends javax.swing.JFrame {
         jButton2.setBounds(590, 310, 72, 23);
 
         jButton3.setText("Pesan");
+        jButton3.addActionListener(this::jButton3ActionPerformed);
         getContentPane().add(jButton3);
         jButton3.setBounds(120, 310, 72, 23);
 
@@ -93,7 +99,18 @@ public class tradisional extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        harga = 45000000;
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        harga = 10000000;
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        harga = 23000000;
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
