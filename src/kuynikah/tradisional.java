@@ -10,8 +10,9 @@ package kuynikah;
  */
 public class tradisional extends javax.swing.JFrame {
     //deklarasi
+    Data data = new Data();
     
-    int harga;
+    
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(tradisional.class.getName());
 
@@ -99,17 +100,29 @@ public class tradisional extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        harga = 45000000;
+        data.hargapaket = 45000000;
+        
+        pembayaran pb = new pembayaran();
+        pb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        harga = 10000000;
+        data.hargapaket = 10000000;
+        
+        pembayaran pb = new pembayaran();
+        pb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        harga = 23000000;
+        data.hargapaket = 23000000;
+        
+        pembayaran pb = new pembayaran();
+        pb.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

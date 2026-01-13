@@ -4,6 +4,8 @@
  */
 package kuynikah;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Hype AMD
@@ -15,7 +17,12 @@ public class FramePertanyaan extends javax.swing.JFrame {
     /**
      * Creates new form FrameHasil
      */
+        Data data = new Data(); //BUAT PANGGIL PROGRAM YANG ADA DI fle data
+        
+        boolean isHalal = true;
+        
     public FramePertanyaan() {
+        
         initComponents();
     }
 
@@ -33,6 +40,9 @@ public class FramePertanyaan extends javax.swing.JFrame {
         buttonGroup2 = new javax.swing.ButtonGroup();
         jRadioButton3 = new javax.swing.JRadioButton();
         buttonGroup3 = new javax.swing.ButtonGroup();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jCalendar2 = new com.toedter.calendar.JCalendar();
+        jCalendar1 = new com.toedter.calendar.JCalendar();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lbl1 = new javax.swing.JLabel();
@@ -43,14 +53,14 @@ public class FramePertanyaan extends javax.swing.JFrame {
         lbl6 = new javax.swing.JLabel();
         lbl7 = new javax.swing.JLabel();
         lbl9 = new javax.swing.JLabel();
-        txt1 = new javax.swing.JTextField();
+        txtnama = new javax.swing.JTextField();
         lbl10 = new javax.swing.JLabel();
-        txt2 = new javax.swing.JTextField();
+        txtemail = new javax.swing.JTextField();
         lbl12 = new javax.swing.JLabel();
         lbl11 = new javax.swing.JLabel();
-        txt3 = new javax.swing.JTextField();
+        txtnomor = new javax.swing.JTextField();
         lbl13 = new javax.swing.JLabel();
-        txt5 = new javax.swing.JTextField();
+        txtjt = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         lbl8 = new javax.swing.JLabel();
         rdr1 = new javax.swing.JRadioButton();
@@ -59,11 +69,14 @@ public class FramePertanyaan extends javax.swing.JFrame {
         cbx1 = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
 
         jTextField3.addActionListener(this::jTextField3ActionPerformed);
 
         jRadioButton3.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jRadioButton3.setText("Nasi Box");
+
+        jRadioButton1.setText("jRadioButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -104,13 +117,15 @@ public class FramePertanyaan extends javax.swing.JFrame {
         lbl9.setForeground(new java.awt.Color(101, 176, 242));
         lbl9.setText("NAMA");
 
-        txt1.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtnama.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtnama.addActionListener(this::txtnamaActionPerformed);
 
         lbl10.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         lbl10.setForeground(new java.awt.Color(101, 176, 242));
         lbl10.setText("EMAIL");
 
-        txt2.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtemail.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtemail.addActionListener(this::txtemailActionPerformed);
 
         lbl12.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         lbl12.setForeground(new java.awt.Color(101, 176, 242));
@@ -120,13 +135,15 @@ public class FramePertanyaan extends javax.swing.JFrame {
         lbl11.setForeground(new java.awt.Color(101, 176, 242));
         lbl11.setText("TELP");
 
-        txt3.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtnomor.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtnomor.addActionListener(this::txtnomorActionPerformed);
 
         lbl13.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         lbl13.setForeground(new java.awt.Color(101, 176, 242));
         lbl13.setText("JUMLAH TAMU");
 
-        txt5.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtjt.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        txtjt.addActionListener(this::txtjtActionPerformed);
 
         jPanel3.setBackground(new java.awt.Color(225, 222, 222));
 
@@ -138,17 +155,21 @@ public class FramePertanyaan extends javax.swing.JFrame {
         rdr1.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         rdr1.setForeground(new java.awt.Color(101, 176, 242));
         rdr1.setText("Prasmanan");
+        rdr1.addActionListener(this::rdr1ActionPerformed);
 
         rdr2.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         rdr2.setForeground(new java.awt.Color(101, 176, 242));
         rdr2.setText("Nasi Box");
+        rdr2.addActionListener(this::rdr2ActionPerformed);
 
         rdr3.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         rdr3.setForeground(new java.awt.Color(101, 176, 242));
         rdr3.setText("Snack Box");
+        rdr3.addActionListener(this::rdr3ActionPerformed);
 
         cbx1.setForeground(new java.awt.Color(101, 176, 242));
         cbx1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Halal food", "Non halal food" }));
+        cbx1.addActionListener(this::cbx1ActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -181,16 +202,19 @@ public class FramePertanyaan extends javax.swing.JFrame {
                     .addComponent(rdr2)
                     .addComponent(rdr3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cbx1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(cbx1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(11, Short.MAX_VALUE))
         );
 
         jButton1.setForeground(new java.awt.Color(101, 176, 242));
         jButton1.setText("RESET");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jButton2.setForeground(new java.awt.Color(101, 176, 242));
         jButton2.setText("PESAN");
         jButton2.addActionListener(this::jButton2ActionPerformed);
+
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -218,46 +242,31 @@ public class FramePertanyaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2)
                         .addGap(18, 18, 18)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txt5)
-                    .addComponent(txt1)
-                    .addComponent(lbl9)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(lbl12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txt2))
-                            .addComponent(lbl10))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbl11)
-                            .addComponent(txt3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lbl13, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
-                        .addGap(197, 197, 197)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtjt, javax.swing.GroupLayout.DEFAULT_SIZE, 275, Short.MAX_VALUE)
+                        .addComponent(txtnama)
+                        .addComponent(lbl9))
+                    .addComponent(lbl13, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(lbl12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txtemail))
+                                .addComponent(lbl10))
+                            .addGap(18, 18, 18)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtnomor, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbl11)))))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(7, 7, 7)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(lbl9)
-                        .addGap(3, 3, 3)
-                        .addComponent(txt1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl10)
-                            .addComponent(lbl11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txt2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lbl12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lbl13))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(lbl1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -271,15 +280,36 @@ public class FramePertanyaan extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lbl6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl7)
+                        .addComponent(lbl7))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(lbl9)
+                        .addGap(3, 3, 3)
+                        .addComponent(txtnama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbl10)
+                            .addComponent(lbl11))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtemail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtnomor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lbl12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(lbl13)
+                        .addGap(9, 9, 9)
+                        .addComponent(txtjt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txt5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addGap(11, 11, 11))
+                .addGap(23, 23, 23))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -301,7 +331,7 @@ public class FramePertanyaan extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 509, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -317,10 +347,175 @@ public class FramePertanyaan extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        frame1 frm1 = new frame1();
-        frm1.setVisible(true);
-        this.dispose();
+        frame1 frm1 = new frame1(); 
+        frm1.setVisible(true);       
+        this.dispose();    
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtnamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnamaActionPerformed
+        // TODO add your handling code here:
+        
+        String nama = txtnama.getText().trim();
+
+        if (nama.isEmpty()) 
+        {
+            JOptionPane.showMessageDialog(this,
+            "Nama tidak boleh kosong");
+            txtnama.requestFocus();
+            return;
+        }
+
+        if (!nama.matches("[a-zA-Z ]+")) 
+        {
+            JOptionPane.showMessageDialog(this,
+            "Input tidak boleh mengandung angka!");
+            txtnama.requestFocus();
+            return;
+        }
+        
+        data.nama = nama;
+    }//GEN-LAST:event_txtnamaActionPerformed
+
+    private void txtnomorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomorActionPerformed
+        // TODO add your handling code here:
+        String nomor = txtnomor.getText().trim();
+
+        if (nomor.isEmpty()) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "Nomor tidak boleh kosong");
+        txtnama.requestFocus();
+        return;
+        }
+        
+        if (!nomor.matches("\\d+")) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "Input harus berupa angka");
+        txtnomor.requestFocus();
+        return;
+        }
+        
+        data.nomor= nomor;       
+    }//GEN-LAST:event_txtnomorActionPerformed
+
+    private void txtemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailActionPerformed
+        // TODO add your handling code here:
+        String email = txtemail.getText().trim();
+        
+        if (email.isEmpty()) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "email tidak boleh kosong");
+        txtnama.requestFocus();
+        return;
+        }
+        
+        data.email = email;
+    }//GEN-LAST:event_txtemailActionPerformed
+
+    private void txtjtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtjtActionPerformed
+        // TODO add your handling code here:
+        String input = txtjt.getText().trim();
+        
+        if (input.isEmpty()) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "Input tidak boleh kosong!");
+        txtjt.requestFocus();
+        return;
+        }
+        
+        if (!input.matches("\\d+")) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "Input harus berupa angka saja!");
+        txtjt.requestFocus();
+        return;
+        }
+        
+        int angka = Integer.parseInt(input);
+        
+        data.jt = angka;
+    }//GEN-LAST:event_txtjtActionPerformed
+
+    private void rdr3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdr3ActionPerformed
+        // TODO add your handling code here:
+        int snack = 0;
+        snack = 18000;
+        
+        data.harga.add(snack);
+    }//GEN-LAST:event_rdr3ActionPerformed
+
+    private void cbx1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx1ActionPerformed
+        
+        String pilihhan = cbx1.getSelectedItem().toString();
+        
+        if (pilihhan.equals("Halal food")) 
+        {
+            isHalal = true;
+        } 
+        
+        else if(pilihhan.equals("Non halal food"))
+        {
+            isHalal = false;
+        }
+
+    }//GEN-LAST:event_cbx1ActionPerformed
+
+    private void rdr1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdr1ActionPerformed
+        // TODO add your handling code here:
+        int prs = 0;
+        
+        prs = 45000;
+        
+        if (!isHalal) 
+        {
+            prs = prs + 2000;
+        }
+        
+        data.harga.add(prs);
+    }//GEN-LAST:event_rdr1ActionPerformed
+
+    private void rdr2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdr2ActionPerformed
+        // TODO add your handling code here:
+        int box = 0;     
+        box = 30000;
+        
+        if (!isHalal) 
+        {
+            box = box + 2000;
+        }
+        
+        data.harga.add(box);
+    }//GEN-LAST:event_rdr2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Data.nama = null;
+        Data.email = null;
+        Data.nomor = null;
+        Data.jt = 0;
+        Data.tanggal = null;
+        Data.harga.clear();
+
+        JOptionPane.showMessageDialog(this, "Berhasil di reset");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+         String tanggal = txtemail.getText().trim();
+        
+        if (tanggal.isEmpty()) 
+        {
+        JOptionPane.showMessageDialog(this,
+        "Nomor tidak boleh kosong");
+        txtnama.requestFocus();
+        return;
+        }
+        
+        data.tanggal = tanggal;
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -354,10 +549,14 @@ public class FramePertanyaan extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbx1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private com.toedter.calendar.JCalendar jCalendar1;
+    private com.toedter.calendar.JCalendar jCalendar2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel lbl1;
     private javax.swing.JLabel lbl10;
@@ -375,9 +574,9 @@ public class FramePertanyaan extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdr1;
     private javax.swing.JRadioButton rdr2;
     private javax.swing.JRadioButton rdr3;
-    private javax.swing.JTextField txt1;
-    private javax.swing.JTextField txt2;
-    private javax.swing.JTextField txt3;
-    private javax.swing.JTextField txt5;
+    private javax.swing.JTextField txtemail;
+    private javax.swing.JTextField txtjt;
+    private javax.swing.JTextField txtnama;
+    private javax.swing.JTextField txtnomor;
     // End of variables declaration//GEN-END:variables
 }
