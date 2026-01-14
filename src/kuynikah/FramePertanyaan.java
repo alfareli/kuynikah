@@ -348,7 +348,8 @@ public class FramePertanyaan extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         frame1 frm1 = new frame1(); 
-        frm1.setVisible(true);       
+        frm1.setVisible(true);
+        frm1.setLocationRelativeTo(null);
         this.dispose();    
     }//GEN-LAST:event_jButton2ActionPerformed
 

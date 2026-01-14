@@ -104,6 +104,7 @@ public class tradisional extends javax.swing.JFrame {
         
         pembayaran pb = new pembayaran();
         pb.setVisible(true);
+        pb.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -113,6 +114,7 @@ public class tradisional extends javax.swing.JFrame {
         
         pembayaran pb = new pembayaran();
         pb.setVisible(true);
+        pb.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -122,6 +124,7 @@ public class tradisional extends javax.swing.JFrame {
         
         pembayaran pb = new pembayaran();
         pb.setVisible(true);
+        pb.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 

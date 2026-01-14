@@ -81,6 +81,7 @@ public class FrameHome extends javax.swing.JFrame {
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         FramePertanyaan pindah = new FramePertanyaan();
         pindah.setVisible(true);
+        pindah.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_btn1ActionPerformed
 
